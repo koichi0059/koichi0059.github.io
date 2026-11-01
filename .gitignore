@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# direnv
+.direnv/
+
+# 念のため。このリポジトリは Public なので、トークンを含みうるファイル名は
+# 置かない方針だが、事故ったときに追跡されないよう保険をかけておく。
+.envrc.local
+*.p8
+*.pem
+.env
+.env.*

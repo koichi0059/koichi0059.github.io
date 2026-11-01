@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>koichi0059</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f4fb;
+    --card: #ffffff;
+    --text: #1a1826;
+    --muted: #655f7a;
+    --accent: #6c3fd4;
+    --border: #e3def0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141220;
+      --card: #201d30;
+      --text: #edeaf5;
+      --muted: #a49dbb;
+      --accent: #9b7bff;
+      --border: #332c4a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sub { color: var(--muted); font-size: .9rem; margin: 0 0 2.5rem; }
+  a.app {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    margin-bottom: .75rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  a.app strong { color: var(--accent); }
+  a.app span { display: block; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>koichi0059</h1>
+<p class="sub">個人で作っているアプリ・ツールの、各種ポリシーの掲載先です。</p>
+
+<a class="app" href="./namihei/privacy/">
+  <strong>ナミヘイ</strong>
+  <span>プライバシーポリシー</span>
+</a>
+
+<a class="app" href="./movie-scheduler/">
+  <strong>動画予約ツール</strong>
+  <span>概要とプライバシーポリシー</span>
+</a>
+
+<a class="app" href="./masume/privacy/">
+  <strong>マスメ</strong>
+  <span>プライバシーポリシー</span>
+</a>
+
+<a class="app" href="./tomoshibi/privacy/">
+  <strong>トモシビ</strong>
+  <span>プライバシーポリシー</span>
+</a>
+
+</main>
+</body>
+</html>

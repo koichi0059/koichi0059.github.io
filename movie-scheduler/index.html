@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>動画予約ツール</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f4fb;
+    --card: #ffffff;
+    --text: #1a1826;
+    --muted: #655f7a;
+    --accent: #6c3fd4;
+    --border: #e3def0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141220;
+      --card: #201d30;
+      --text: #edeaf5;
+      --muted: #a49dbb;
+      --accent: #9b7bff;
+      --border: #332c4a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Noto Sans JP", sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 .25rem; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 2.5rem 0 .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .app { color: var(--accent); font-weight: 700; }
+  .dates { color: var(--muted); font-size: .85rem; margin: 0 0 2rem; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.4rem;
+    margin: 0 0 1rem;
+  }
+  .lead p { margin: 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>動画予約ツール</h1>
+<p class="dates"><span class="app">動画予約ツール</span>　個人利用のデスクトップツール</p>
+
+<div class="lead">
+  <p><strong>自分の YouTube チャンネルに上げた動画へ、説明文やタグを設定し、公開日時を予約するための
+  個人用ツールです。</strong>作者の手元の Mac で動くスクリプトで、一般には配布していません。</p>
+</div>
+
+<h2>できること</h2>
+<ul>
+  <li>自分がアップロードした動画の一覧を取得する</li>
+  <li>タイトル・説明文・タグ・カテゴリを設定する</li>
+  <li>公開日時を予約する（非公開のまま指定時刻に公開）</li>
+  <li>自分の動画にコメントを投稿する</li>
+</ul>
+<p>いずれも<strong>作者本人のチャンネルに対してのみ</strong>行います。
+他人のチャンネルや動画を操作することはありません。</p>
+
+<h2>使用する Google の権限</h2>
+<p>Google アカウントでのログイン時に、次の権限を求めます。</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code>
+  — 自分の YouTube アカウントの動画情報の取得・更新、およびコメントの投稿に使用します。</li>
+</ul>
+
+<h2>動作環境</h2>
+<p>macOS 上の Python スクリプトとして動作します。サーバーはありません。
+ログインで得たトークンは、作者のパソコンの中だけに保存されます。</p>
+
+<h2>プライバシー</h2>
+<p>取り扱う情報については<a href="./privacy/">プライバシーポリシー</a>をご覧ください。</p>
+
+<h2>お問い合わせ</h2>
+<p>本ツールについてのお問い合わせは、
+<a href="https://github.com/koichi0059/koichi0059.github.io/issues">GitHub の Issues</a>
+よりお願いします。</p>
+
+<footer>
+  <p>koichi0059</p>
+</footer>
+
+</main>
+</body>
+</html>

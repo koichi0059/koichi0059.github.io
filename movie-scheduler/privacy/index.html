@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — 動画予約ツール</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f4fb;
+    --card: #ffffff;
+    --text: #1a1826;
+    --muted: #655f7a;
+    --accent: #6c3fd4;
+    --border: #e3def0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141220;
+      --card: #201d30;
+      --text: #edeaf5;
+      --muted: #a49dbb;
+      --accent: #9b7bff;
+      --border: #332c4a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Noto Sans JP", sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 .25rem; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 2.5rem 0 .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .app { color: var(--accent); font-weight: 700; }
+  .dates { color: var(--muted); font-size: .85rem; margin: 0 0 2rem; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.4rem;
+    margin: 0 0 1rem;
+  }
+  .lead p { margin: 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>プライバシーポリシー</h1>
+<p class="dates">デスクトップツール <span class="app">動画予約ツール</span>　制定 2026年9月20日</p>
+
+<div class="lead">
+  <p><strong>動画予約ツールは、作者本人のみが使う個人用ツールです。</strong>
+  利用者から情報を集めることはなく、サーバーも持ちません。Google から取得した情報は、
+  すべて作者のパソコンの中だけで扱われます。</p>
+</div>
+
+<h2>1. 本ツールについて</h2>
+<p>本ツールは、作者が自分の YouTube チャンネルを運用するために作った、
+macOS 上で動作するスクリプトです。一般に配布しておらず、作者以外の利用者はいません。</p>
+
+<h2>2. アクセスする Google ユーザーデータ</h2>
+<p>Google アカウントでの認証時に、次の権限を求めます。</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code></li>
+</ul>
+<p>この権限は、次の目的にのみ使用します。</p>
+<ul>
+  <li>自分がアップロードした動画の一覧および現在の設定を読み取る</li>
+  <li>動画のタイトル・説明文・タグ・カテゴリ・公開日時を書き換える</li>
+  <li>自分の動画にコメントを投稿する</li>
+</ul>
+<p>上記以外の目的（広告、プロファイリング、機械学習モデルの学習など）には使用しません。</p>
+
+<h2>3. 情報の保存</h2>
+<p>認証で得たアクセストークンおよびリフレッシュトークンは、作者のパソコンの
+ホームディレクトリ配下に、本人だけが読み書きできる権限で保存されます。
+外部のサーバーへ送信することはありません。</p>
+<p>動画のタイトルや説明文など、YouTube から取得した内容は、作業中に一時的に
+手元のファイルへ書き出されることがありますが、これも同じパソコンの中に留まります。</p>
+
+<h2>4. 第三者への提供</h2>
+<p>取得した情報を第三者へ提供・販売・共有することはありません。</p>
+
+<h2>5. Google API サービスのユーザーデータに関するポリシー</h2>
+<p>本ツールが Google API から受け取る情報の使用および他者への移転は、
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
+（限定使用の要件を含む）に準拠します。</p>
+
+<h2>6. 広告・アクセス解析</h2>
+<p>本ツールは広告を表示せず、アクセス解析や行動追跡の仕組みも使用していません。</p>
+
+<h2>7. アクセス権の取り消しと削除</h2>
+<p>本ツールに与えた権限は、
+<a href="https://myaccount.google.com/permissions">Google アカウントの「サードパーティ製アプリとサービス」</a>
+からいつでも取り消せます。取り消すと、本ツールは以後 YouTube の情報にアクセスできません。
+手元に保存されたトークンは、該当ファイルを削除することで消去されます。</p>
+
+<h2>8. 本ポリシーの変更</h2>
+<p>内容に変更があった場合は、このページを更新します。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>本ポリシーおよび本ツールについてのお問い合わせは、
+<a href="https://github.com/koichi0059/koichi0059.github.io/issues">GitHub の Issues</a>
+よりお願いします。</p>
+
+<footer>
+  <p>koichi0059</p>
+</footer>
+
+</main>
+</body>
+</html>
