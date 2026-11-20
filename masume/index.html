@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6828953521">
+<title>マスメ：色と形の論理パズル</title>
+<meta name="description" content="色と形の駒を置いていく論理パズル。全1000ステージ、答えはいつも1つ。ヒントは次の一手と理由を文章で教えます。">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f4fb;
+    --card: #ffffff;
+    --text: #1a1826;
+    --muted: #655f7a;
+    --accent: #6c3fd4;
+    --border: #e3def0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141220;
+      --card: #201d30;
+      --text: #edeaf5;
+      --muted: #a49dbb;
+      --accent: #9b7bff;
+      --border: #332c4a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Noto Sans JP", sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 .25rem; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 2.5rem 0 .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .app { color: var(--accent); font-weight: 700; }
+  .dates { color: var(--muted); font-size: .85rem; margin: 0 0 2rem; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.4rem;
+    margin: 0 0 1rem;
+  }
+  .lead p { margin: 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>マスメ</h1>
+<p class="dates">iOS アプリ　色と形の論理パズル</p>
+<div class="lead">
+  <p>盤のどの行にも、どの列にも、太い線で囲まれたいびつな領域にも、同じ色の駒は1つずつ。
+  全1000ステージ、答えはいつも1つで、あてずっぽうは要りません。
+  ヒントは「次の一手」と「その理由」を文章で教えます。</p>
+</div>
+<h2>ダウンロード</h2>
+<p><a href="https://apps.apple.com/jp/app/id6828953521">App Store で見る</a>（iPhone・無料）</p>
+<h2>ルール</h2>
+<ul>
+  <li>行・列・領域に、同じ色は1つずつ</li>
+  <li>ステージが進むと、ななめ禁止・桂馬禁止・対角線のルールが重なります</li>
+  <li>駒は色と形をいっしょに使うので、色の区別が苦手でも遊べます</li>
+</ul>
+<h2>サポート</h2>
+<p><a href="privacy/">プライバシーポリシー</a>／お問い合わせは
+<a href="https://github.com/koichi0059/koichi0059.github.io/issues">GitHub の Issues</a> へ。</p>
+<footer><p>koichi0059</p></footer>
+</main>
+</body>
+</html>
