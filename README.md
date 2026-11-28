@@ -9,5 +9,6 @@ https://koichi0059.github.io/
 | 動画予約ツール | https://koichi0059.github.io/movie-scheduler/ （ポリシーは /privacy/） |
 | マスメ | https://koichi0059.github.io/masume/privacy/ |
 | トモシビ | https://koichi0059.github.io/tomoshibi/privacy/ |
+| 脱出ゲーム 年越しそば屋（トシコシ） | https://koichi0059.github.io/toshikoshi/privacy/ |
 
 お問い合わせは、GitHub の Issues からお願いします。
